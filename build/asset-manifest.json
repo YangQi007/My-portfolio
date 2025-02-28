@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6b67719.css",
-    "main.js": "/static/js/main.21b36eba.js",
+    "main.css": "/static/css/main.641a080c.css",
+    "main.js": "/static/js/main.f0657af2.js",
     "static/media/yang.jpeg": "/static/media/yang.704ca5b158150b44df99.jpeg",
-    "static/media/myportfolio.png": "/static/media/myportfolio.b6a6978f53dd1e50e76b.png",
     "static/media/yang1.jpeg": "/static/media/yang1.e1cd125dcd3d846809ad.jpeg",
+    "static/media/genev4_banner.png": "/static/media/genev4_banner.85ca785a0b9ddc9937e2.png",
     "static/media/django_twitter.png": "/static/media/django_twitter.6e30b4a619e62c2d5714.png",
-    "static/media/cv.pdf": "/static/media/cv.c4ce4ad76ba855de90c2.pdf",
+    "static/media/bam.iobio_wide.png": "/static/media/bam.iobio_wide.fa95b2a65c38ecb1fd5b.png",
+    "static/media/cv.pdf": "/static/media/cv.3a15decf07739e3b4254.pdf",
     "static/media/interpreter.jpeg": "/static/media/interpreter.308849b0359e048d6258.jpeg",
     "static/media/avatar5_Valerie.jpeg": "/static/media/avatar5_Valerie.4e06e8fd4bc602ad7684.jpeg",
     "static/media/avatar6_Shaurya.jpeg": "/static/media/avatar6_Shaurya.5b85db831566e093f59e.jpeg",
     "index.html": "/index.html",
-    "main.f6b67719.css.map": "/static/css/main.f6b67719.css.map",
-    "main.21b36eba.js.map": "/static/js/main.21b36eba.js.map"
+    "main.641a080c.css.map": "/static/css/main.641a080c.css.map",
+    "main.f0657af2.js.map": "/static/js/main.f0657af2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6b67719.css",
-    "static/js/main.21b36eba.js"
+    "static/css/main.641a080c.css",
+    "static/js/main.f0657af2.js"
   ]
 }
