@@ -24,22 +24,26 @@
     margin-bottom: 2.5rem;
 }
 
-.resume__link {
+.cta-btn {
     display: inline-block;
-    color: var(--color-white);
-    text-decoration: none;
+    color: var(--color-primary);
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
     font-size: 0.9rem;
-    font-weight: 600;
-    transition: var(--transition);
+    font-weight: 500;
     letter-spacing: 0.5px;
-    margin-top: 1rem;
-    border-bottom: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
 }
 
-.resume__link:hover {
-    color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
-    transform: translateY(-2px);
+.cta-btn:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(77, 181, 255, 0.2);
 }
 
 .highlight {
@@ -48,14 +52,51 @@
 }
 
 .highlight.link {
+    color: var(--color-white);
+    position: relative;
     text-decoration: none;
-    transition: var(--transition);
-    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding-right: 1.1em; /* Adjusted space for the smaller icon */
+}
+
+.highlight.link::before {
+    content: '↗';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white); /* Changed to white */
+    transition: transform 0.3s ease, color 0.3s ease; /* Added color transition */
+    font-size: 0.8em; /* Made the arrow smaller */
+}
+
+.highlight.link:hover::before {
+    transform: translateY(-50%) translateX(3px) rotate(15deg); /* Added rotation */
+    color: var(--color-primary); /* Change color on hover */
 }
 
 .highlight.link:hover {
     color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
+}
+
+.highlight.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.highlight.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* ====================== Media Queries (Medium Devices) =========== */

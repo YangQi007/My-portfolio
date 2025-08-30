@@ -70,23 +70,9 @@
 }
 
 .portfolio__view-all {
-    margin-top: 2rem;
+    max-width: 900px; /* Matched to container */
+    margin: 2rem auto 0 auto;
     text-align: left;
-}
-
-.view-all-projects {
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: var(--transition);
-    display: inline-block;
-}
-
-.view-all-projects:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-    transform: translateX(5px);
 }
 
 /* ====================== Media Queries (Medium Devices) =========== */

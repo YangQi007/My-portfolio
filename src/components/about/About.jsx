@@ -16,11 +16,11 @@ const About = () => {
         </p>
         
         <p>
-          <span className="highlight">An open-source contributor in AI4S:</span> Recently, I am working on the open-source project <a href="https://aixiv.co" target="_blank" rel="noopener noreferrer" className="highlight link">aiXiv</a>: aiXiv is a free, AI- or human-peer-reviewed preprint archive for research authored by AI Scientists and Robot Scientists across all scientific fields.
+          <span className="highlight">An open-source contributor in AI4S:</span> I am also an open-source contributor in AI4S. This is the open-source project <a href="https://aixiv.co" target="_blank" rel="noopener noreferrer" className="highlight link">aiXiv</a>: aiXiv is a free, AI- or human-peer-reviewed preprint archive for research authored by AI Scientists and Robot Scientists across all scientific fields. Please check: <a href="https://github.com/aixiv-org" target="_blank" rel="noopener noreferrer" className="highlight link">aixiv-org</a> (This is a paper submitted to AAAI 2026).
         </p>
 
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume__link">
-          Full Resume ↗
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-btn">
+            View Full Résumé
         </a>
       </div>
     </section>

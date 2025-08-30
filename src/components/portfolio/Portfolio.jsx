@@ -72,7 +72,7 @@ const Portfolio = () => {
       </div>
 
       <div className="portfolio__view-all">
-        <a href="https://github.com/YangQi007?tab=repositories" target="_blank" rel="noopener noreferrer" className="view-all-projects">View all projects ↗</a>
+        <a href="https://github.com/YangQi007?tab=repositories" target="_blank" rel="noopener noreferrer" className="cta-btn">View all projects</a>
       </div>
 
     </section>

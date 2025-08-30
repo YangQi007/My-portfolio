@@ -1,7 +1,7 @@
 import React from 'react'
 import './leftSidebar.css'
 import ME from '../../assets/yang.jpeg'
-import CircleNav from '../circleNav/CircleNav'
+import VerticalNav from '../verticalNav/VerticalNav'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 
@@ -14,7 +14,7 @@ const LeftSidebar = () => {
           <h5 className="text-light">Fullstack Developer</h5>
         </div>
         
-        <CircleNav />
+                       <VerticalNav />
         
         <div className="sidebar__socials">
           <a href="https://www.linkedin.com/in/yangqi007/" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
