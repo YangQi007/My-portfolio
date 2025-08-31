@@ -35,15 +35,34 @@
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.5px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.4), transparent);
+    transition: left 0.6s;
+}
+
+.cta-btn:hover::before {
+    left: 100%;
 }
 
 .cta-btn:hover {
     background: var(--color-primary);
     color: var(--color-bg);
     transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(77, 181, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.6), 0 0 40px rgba(255, 0, 128, 0.3);
+    border-color: var(--color-accent);
 }
 
 .highlight {

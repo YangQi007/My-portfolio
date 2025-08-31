@@ -6,7 +6,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 
 const LeftSidebar = () => {
-  return (
+    return (
     <div className='left__sidebar'>
       <div className="sidebar__content">
         <div className="hero__intro">
@@ -14,7 +14,7 @@ const LeftSidebar = () => {
           <h5 className="text-light">Fullstack Developer</h5>
         </div>
         
-                       <VerticalNav />
+        <VerticalNav />
         
         <div className="sidebar__socials">
           <a href="https://www.linkedin.com/in/yangqi007/" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>

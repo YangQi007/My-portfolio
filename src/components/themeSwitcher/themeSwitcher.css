@@ -1,0 +1,207 @@
+.theme-switcher {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.theme-switcher__toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    color: var(--color-light);
+    font-size: 1.2rem;
+}
+
+.theme-switcher__toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+.theme-switcher__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.theme-switcher__dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: var(--color-bg-variant);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    min-width: 320px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    z-index: 1001;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.theme-switcher__header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-switcher__header h4 {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.theme-switcher__options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    width: 100%;
+}
+
+.theme-option:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-option.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-primary);
+}
+
+.theme-option__icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.theme-option__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.theme-option__name {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.theme-option__description {
+    color: var(--color-light);
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.theme-option__colors {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.color-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Theme-specific animations */
+.theme-cyberpunk .theme-switcher__toggle {
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+.theme-nordic .theme-switcher__toggle {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.theme-forest .theme-switcher__toggle {
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.theme-monochrome .theme-switcher__toggle {
+    box-shadow: 0 0 10px rgba(243, 244, 246, 0.3);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .theme-switcher {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .theme-switcher__dropdown {
+        right: -1rem;
+        min-width: 280px;
+        max-width: 90vw;
+    }
+    
+    .theme-option {
+        padding: 1rem;
+    }
+    
+    .theme-option__name {
+        font-size: 1rem;
+    }
+    
+    .theme-option__description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .theme-switcher {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .theme-switcher__toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .theme-switcher__dropdown {
+        right: -0.5rem;
+        min-width: 260px;
+        padding: 0.8rem;
+    }
+}

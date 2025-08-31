@@ -12,11 +12,24 @@
 }
 
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant:#2c2c6c;
-    --color-primary: #4db5ff;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    /* Neo-Brutalist Theme - Modern 2024-2025 */
+    --color-bg: #000000;
+    --color-bg-variant: #111111;
+    --color-bg-secondary: #1A1A1A;
+    --color-primary: #FF0080;
+    --color-primary-variant: #E6007A;
+    --color-accent: #00FF41;
+    --color-white: #FFFFFF;
+    --color-light: rgba(255, 255, 255, 0.9);
+    --color-text-muted: rgba(255, 255, 255, 0.7);
+
+    /* Content background gradient variables */
+    --content-gradient-start: rgba(255, 0, 128, 0.02);
+    --content-gradient-end: rgba(0, 255, 65, 0.02);
+
+    /* Hover effect variables */
+    --hover-bg-color: rgba(255, 0, 128, 0.08);
+    --hover-shadow-color: rgba(255, 0, 128, 0.3);
 
     --transition: all 400ms ease;
 }
@@ -31,11 +44,14 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: linear-gradient(135deg, 
+        var(--color-bg) 0%, 
+        var(--color-bg-variant) 35%, 
+        var(--color-bg-secondary) 100%);
+    background-attachment: fixed;
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png)
-
+    min-height: 100vh;
 }
 
 /* =================== General Styles ===========*/

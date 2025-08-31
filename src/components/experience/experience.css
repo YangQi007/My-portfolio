@@ -32,8 +32,9 @@
 
 .experience__item:hover {
     border-color: var(--color-primary);
-    background: rgba(77, 181, 255, 0.05);
+    background: var(--hover-bg-color, rgba(255, 0, 128, 0.08));
     transform: translateY(-2px);
+    box-shadow: 0 0 30px var(--hover-shadow-color, rgba(255, 0, 128, 0.3));
 }
 
 .experience__item:hover .experience__content h3 {

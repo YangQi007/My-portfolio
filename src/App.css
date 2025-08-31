@@ -9,6 +9,24 @@
     margin-left: 400px;
     padding: 2rem;
     scroll-behavior: smooth;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 0 20px;
+    position: relative;
+}
+
+.app__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, 
+        var(--content-gradient-start, rgba(255, 0, 128, 0.02)) 0%, 
+        var(--content-gradient-start, rgba(255, 0, 128, 0.02)) 100%);
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* ====================== Media Queries (Medium Devices) =========== */
@@ -16,6 +34,7 @@
     .app__content {
         margin-left: 300px;
         padding: 1.5rem;
+        border-radius: 0 0 0 15px;
     }
 }
 
@@ -28,5 +47,7 @@
     .app__content {
         margin-left: 0;
         padding: 1rem;
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.01);
     }
 } 

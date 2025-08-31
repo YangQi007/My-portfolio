@@ -16,8 +16,15 @@ const Experience = () => {
             </p>
             <div className="experience__tech">
               <span className="tech__tag">AI/ML</span>
-              <span className="tech__tag">Microbiome Analysis</span>
-              <span className="tech__tag">Biotech</span>
+              <span className="tech__tag">React</span>
+              <span className="tech__tag">Python</span>
+              <span className="tech__tag">FastAPI</span>
+              <span className="tech__tag">PostgreSQL</span>
+              <span className="tech__tag">Docker</span>
+              <span className="tech__tag">AWS</span>
+              <span className="tech__tag">ECS</span>
+              <span className="tech__tag">ECK</span>
+              <span className="tech__tag">Healthcare</span>
               <span className="tech__tag">Leadership</span>
               <span className="tech__tag">Product Strategy</span>
             </div>
@@ -33,8 +40,14 @@ const Experience = () => {
             </p>
             <div className="experience__tech">
               <span className="tech__tag">React</span>
-              <span className="tech__tag">Jest</span>
+              <span className="tech__tag">Vue</span>
               <span className="tech__tag">JavaScript</span>
+              <span className="tech__tag">Node.js</span>
+              <span className="tech__tag">Python</span>
+              <span className="tech__tag">Tailwind CSS</span>
+              <span className="tech__tag">Docker</span>
+              <span className="tech__tag">AWS</span>
+              <span className="tech__tag">Jest</span>
               <span className="tech__tag">Data Visualization</span>
             </div>
           </div>
@@ -48,10 +61,16 @@ const Experience = () => {
               Worked on iobio.io, real-time genomic data analysis and visualization web platform. Led the development of bam.iobio, an interactive analysis dashboard by creating a reusable UI Component SDK that improved user analysis efficiency. Collaborated with Harvard Medical School's Undiagnosed Diseases Network to design a patient portal.
             </p>
             <div className="experience__tech">
+              <span className="tech__tag">React</span>
               <span className="tech__tag">Vue</span>
               <span className="tech__tag">D3.js</span>
+              <span className="tech__tag">JavaScript</span>
               <span className="tech__tag">Python</span>
               <span className="tech__tag">Node.js</span>
+              <span className="tech__tag">Java</span>
+              <span className="tech__tag">Pandas</span>
+              <span className="tech__tag">NumPy</span>
+              <span className="tech__tag">Matplotlib</span>
               <span className="tech__tag">PostgreSQL</span>
               <span className="tech__tag">Web Components</span>
               <span className="tech__tag">Figma</span>
