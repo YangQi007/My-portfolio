@@ -13,6 +13,7 @@
     backdrop-filter: blur(5px);
     border-radius: 0 0 0 20px;
     position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 .app__content::before {
@@ -49,5 +50,7 @@
         padding: 1rem;
         border-radius: 0;
         background: rgba(255, 255, 255, 0.01);
+        overflow-y: visible;
+        height: auto;
     }
 } 
