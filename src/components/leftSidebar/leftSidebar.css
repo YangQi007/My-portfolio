@@ -145,7 +145,7 @@
             rgba(26, 26, 46, 0.98) 50%, 
             rgba(22, 33, 62, 0.98) 100%);
         backdrop-filter: blur(15px);
-        border-right: none;
+        border-right: none !important;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
     
