@@ -191,7 +191,7 @@
 /* iPhone SE and similar small screens */
 @media screen and (max-width: 380px) {
     .sidebar__content {
-        padding: 2.5rem 1rem;
+        padding: 4rem 1rem 2.5rem 1rem;
         gap: 0.5rem;
     }
     
