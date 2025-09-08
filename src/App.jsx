@@ -4,6 +4,7 @@ import Experience from './components/experience/Experience'
 import Portfolio from './components/portfolio/Portfolio'
 import LeftSidebar from './components/leftSidebar/LeftSidebar'
 import ThemeSwitcher from './components/themeSwitcher/ThemeSwitcher'
+import MobileNav from './components/mobileNav/MobileNav'
 import './App.css'
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
            <Experience/>
            <Portfolio/>
          </div>
+         <MobileNav />
        </div>
    </>
   )

@@ -32,6 +32,7 @@
     --hover-shadow-color: rgba(255, 0, 128, 0.3);
 
     --transition: all 400ms ease;
+    --mobile-nav-height: 56px;
 }
 
 html {
